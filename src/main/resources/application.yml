@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://yugantdb.database.windows.net:1433;database=AzureEmployeeDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: yugant
+    password: rock123@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
+server:
+  port: 9191
